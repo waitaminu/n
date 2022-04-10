@@ -1,5 +1,5 @@
 site_name: Terminale NSI
-site_url: https://waitaminu.github.io/n/
+site_url: "https://waitaminu.github.io/n/"
 theme:
     name: material
     font: false                     # RGPD ; pas de fonte Google
