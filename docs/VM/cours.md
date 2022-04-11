@@ -52,7 +52,7 @@ De manière simplifiée :
 15. Si rien ne se passe au bout d'une dizaine de secondes, fermer la fenêtre et cliquer de nouveau sur `Spice` puis sur `OK`.
 16. Remplir ses identifiants dans la fenêtre de connexion :
     - login : test
-    - mdp : nsispeinfo
+    - mdp : donné en classe
 	
     ![image](data/)
 
