@@ -13,7 +13,7 @@ De manière simplifiée :
 - l'élève se connecte à sa VM depuis un navigateur de n'importe quel ordinateur du lycée ;
 - cet ordinateur (appelé *hôte*) ne va faire que recevoir le flux vidéo venu du serveur (et lui envoyer les interactions utilisateurs : souris, clavier) ;
 - en mettant ce flux vidéo en plein écran, on a l'illusion d'être sous un nouveau système d'exploitation. Nous allons donc travailler sous Linux, tout en restant en réalité sur Windows ;
-- chaque élève a accès à Internet en entrant ses identifiants et mot de passe habituels du réseau pédagogique sur une applocation nommée ALCASAR (Application Libre pour le Contrôle d'Acccès Sécurisé et Authentifié au Réseau).
+- chaque élève a accès à Internet en entrant ses identifiants et mot de passe habituels du réseau pédagogique sur une application nommée ALCASAR (Application Libre pour le Contrôle d'Acccès Sécurisé et Authentifié au Réseau).
 
 ## Procédure
 
@@ -39,23 +39,23 @@ De manière simplifiée :
 
 ![proxmox1](data/proxmox.png)
 
-7. Renseigner son nom d'utilisateur `Proxmox` et son mot de passe puis cliquer sur `Login`.
+7. Renseigner son nom d'utilisateur `Proxmox` et son mot de passe puis cliquer sur `Login` (les identifiants Proxmox seront donnés par le prof).
 8. Un message d'avertissement apparaît ("Aucune clé d'enregistrement valide"). Cliquer `OK` pour l'ignorer.
 9.  Dans la colonne de gauche, sélectionner sa machine virtuelle (VM) sous `Datacenter > SVR-10-ORN`, exemple `112(XUB1)`
 10. En haut à droite, cliquer sur `Démarrer` pour démarrer la VM (ou clic droit sur la VM puis sélectionner `Démarrer`)
 11. Cliquer sur le bouton `Console` et choisir `Spice` (ou clic droit sur la VM puis sélectionner `Console`).
-12. La fenêtre ci-dessous s'affiche : 
-
+12. La fenêtre ci-dessous s'affiche :
+    
 ![image](data/spice.png)
 
-13.  Cliquer `OK`.
-14.  Attendre (un peu).
-15. Si rien ne se passe au bout d'une dizaine de secondes, fermer la fenêtre et cliquer de nouveau sur `Spice` puis sur `OK`.
-16. Remplir ses identifiants `Xubuntu` dans la fenêtre de connexion, si elle n'est pas automatique:
+13.   Cliquer `OK`.
+14.   Attendre (un peu).
+15.  Si rien ne se passe au bout d'une dizaine de secondes, fermer la fenêtre et cliquer de nouveau sur `Spice` puis sur `OK`.
+16.  Remplir ses identifiants `Xubuntu` dans la fenêtre de connexion, si celle-ci n'est pas automatique:
     - login : test
     - mdp : nsispeinfo
 
-17. Basculer l'affichage en plein écran en cliquant sur ![](data/plein_ecran.png) en haut à droite dans Spice.
+17.  Basculer l'affichage en plein écran en cliquant sur ![](data/plein_ecran.png) en haut à droite dans Spice.
 La machine virtuelle exécute la distribution Linux : Xubuntu
 
 ![Bureau de Xubuntu](data/bureau.png)
