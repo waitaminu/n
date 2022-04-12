@@ -3,16 +3,17 @@
 ![image](data/logo.jpg){width=50%}
 
 ## Principe
-Afin de pouvoir travailler sous le système d'exploitation libre Linux sur les machines du lycée (sous Windows), nous utilisons la solution de virtualisation Proxmox. 
+Afin de pouvoir travailler sous le système d'exploitation libre GNU / Linux sur les machines du lycée (sous Windows), nous utilisons la solution de virtualisation Proxmox. Elle est fournie par la Région qui exécute Proxmox sur un serveur, cet environnement virtualisé est organisé sous forme de bulle isolée du réseau pédagogique du lycée mais pas d'Internet.
 
 De manière simplifiée : 
 
 - un serveur (assez puissant) se trouve dans la salle serveur du lycée ;
-- sur cet ordinateur, un grand nombre de systèmes d'exploitation peuvent être démarrés indépendamment ;
-- une VM est dispo par élève : c'est ta machine virtuelle (ta VM : Virtual Machine) ;
-- tu te connectes à ta VM depuis un navigateur de n'importe quel ordinateur du lycée ;
+- sur ce serveur, un grand nombre de systèmes d'exploitation peuvent être démarrés indépendamment ;
+- une VM est disponible par élève : c'est sa machine virtuelle (VM : Virtual Machine) ;
+- l'élève se connecte à sa VM depuis un navigateur de n'importe quel ordinateur du lycée ;
 - cet ordinateur (appelé *hôte*) ne va faire que recevoir le flux vidéo venu du serveur (et lui envoyer les interactions utilisateurs : souris, clavier) ;
-- en mettant ce flux vidéo en plein écran, on a l'illusion d'être sous un nouveau système d'exploitation. Nous allons donc travailler sous Linux, tout en restant en réalité sur Windows.
+- en mettant ce flux vidéo en plein écran, on a l'illusion d'être sous un nouveau système d'exploitation. Nous allons donc travailler sous Linux, tout en restant en réalité sur Windows ;
+- chaque élève a accès à Internet en entrant ses identifiants et mot de passe habituels du réseau pédagogique sur une applocation nommée ALCASAR (Application Libre pour le Contrôle d'Acccès Sécurisé et Authentifié au Réseau).
 
 ## Procédure
 
@@ -38,7 +39,7 @@ De manière simplifiée :
 
 ![proxmox1](data/proxmox.png)
 
-7. Renseigner son nom d'utilisateur et son mot de passe puis cliquer sur `Login`.
+7. Renseigner son nom d'utilisateur `Proxmox` et son mot de passe puis cliquer sur `Login`.
 8. Un message d'avertissement apparaît ("Aucune clé d'enregistrement valide"). Cliquer `OK` pour l'ignorer.
 9.  Dans la colonne de gauche, sélectionner sa machine virtuelle (VM) sous `Datacenter > SVR-10-ORN`, exemple `112(XUB1)`
 10. En haut à droite, cliquer sur `Démarrer` pour démarrer la VM (ou clic droit sur la VM puis sélectionner `Démarrer`)
@@ -50,16 +51,14 @@ De manière simplifiée :
 13.  Cliquer `OK`.
 14.  Attendre (un peu).
 15. Si rien ne se passe au bout d'une dizaine de secondes, fermer la fenêtre et cliquer de nouveau sur `Spice` puis sur `OK`.
-16. Remplir ses identifiants dans la fenêtre de connexion :
+16. Remplir ses identifiants `Xubuntu` dans la fenêtre de connexion, si elle n'est pas automatique:
     - login : test
     - mdp : nsispeinfo
-	
-    ![image](data/)
 
-17. Dans Paramètres > Affichage puis modifier la résolution en 1920x1080 enfin basculer l'affichage en plein écran en cliquant sur ![image](data/plein_ecran.png) en haut à droite dans Spice.
-Résultat :
+17. Basculer l'affichage en plein écran en cliquant sur ![](data/plein_ecran.png) en haut à droite dans Spice.
+La machine virtuelle exécute la distribution Linux : Xubuntu
 
-![](data/bureau.png)
+![Bureau de Xubuntu](data/bureau.png)
 
 18. Au premier lancement du navigateur de la VM, cliquer sur `Afficher la page de connexion du réseau` 
 
@@ -71,6 +70,8 @@ Résultat :
 
 20. S'ouvre alors une fenêtre qui prévient "Attention : vous serez déconnecté si vous fermez cette fenêtre". Utiliser alors un autre onglet pour aller sur Lycée connecté.
 
-![image](data/alcasar2.png)
+``![image](data/alcasar2.png)``
 
+21.  Quand on veut arrêter une VM, faire simplement une déconnexion en cliquant sur l'icône bleu ![](data/menu_xubuntu.png) en haut à gauche du bureau Xubuntu puis choisir d'éteindre. 
 
+22. Pour se déconnecter de ``Proxmox``, aller en haut à droite de la fenêtre et cliquer sur la flêche du bas puis sur ``Déconnexion`` ![Déconnexion de Proxmox](data/deconnexion_proxmox.png)
