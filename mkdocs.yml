@@ -1,9 +1,11 @@
-site_name: Terminale NSI
+site_name: Spé info
 site_url: "https://waitaminu.github.io/n/"
 theme:
     name: material
     font: false                     # RGPD ; pas de fonte Google
     language: fr                    # français
+    markdown_extensions:
+      - pymdownx.superfences
     palette:                        # Palettes de couleurs jour/nuit
       - media: "(prefers-color-scheme: light)"
         scheme: default
