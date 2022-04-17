@@ -4,48 +4,6 @@ theme:
     name: material
     font: false                     # RGPD ; pas de fonte Google
     language: fr                    # français
-    markdown_extensions:
-      # - pymdownx.highlight:
-          # anchor_linenums: true
-      # - pymdownx.inlinehilite
-      # - pymdownx.snippets
-      # - pymdownx.superfences
-      # - pymdownx.arithmatex:
-          # generic: true
-      - meta
-      - abbr
-      - admonition
-      - def_list
-      - attr_list
-      - footnotes
-      - pymdownx.caret
-      - pymdownx.mark
-      - pymdownx.tilde
-      - pymdownx.snippets
-      - pymdownx.details
-      - pymdownx.highlight:
-          linenums: None
-      - pymdownx.tasklist:
-          custom_checkbox: false
-      - pymdownx.inlinehilite
-      - pymdownx.superfences
-      - pymdownx.keys
-      - pymdownx.tabbed:
-          alternate_style: true
-      - pymdownx.betterem:
-          smart_enable: all
-      - pymdownx.arithmatex:
-          generic: true
-      - toc:
-          permalink: ⚓︎
-          toc_depth: 3
-
-    extra_javascript:
-      - javascripts/mathjax.js
-      - xtra/javascripts/interpreter.js
-      - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-      - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
       
     # palette:                        # Palettes de couleurs jour/nuit
       # - media: "(prefers-color-scheme: light)"
@@ -88,4 +46,46 @@ theme:
         - navigation.top
         - toc.integrate
         - header.autohide
- 
+        
+markdown_extensions:
+  # - pymdownx.highlight:
+      # anchor_linenums: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.snippets
+  # - pymdownx.superfences
+  # - pymdownx.arithmatex:
+      # generic: true
+  - meta
+  - abbr
+  - admonition
+  - def_list
+  - attr_list
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums: None
+  - pymdownx.tasklist:
+      custom_checkbox: false
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 3
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - xtra/javascripts/interpreter.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
