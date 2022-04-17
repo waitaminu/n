@@ -2,7 +2,7 @@
 
 ## 1. Retour sur l'algorithme de recherche par dichotomie
 
-Nous avons vu en classe de Première l'algorithme de **dichotomie** (du grec *dikhotomia*, « division en deux parties »).
+Nous avons déjà vu  l'algorithme de recherche par **dichotomie** (du grec *dikhotomia*, « division en deux parties »).
 
 Notre but ici est la recherche de la présence (ou non) d'un élément dans un tableau **triée**.  
 Notre fonction renverra donc un booléen.
