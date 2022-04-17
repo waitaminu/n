@@ -180,7 +180,7 @@ Ainsi, dans le cas où $n$ est pair, il suffit d'élever $a$ au carré (une seul
 
 En anglais le *merge sort*.
 
-### 4.1. Preambule : l'interclassement
+### 4.1. Préambule : l'interclassement
 
 Le mécanisme principal du tri fusion est la **fusion** de deux listes triées en une nouvelle liste elle aussi triée.
 
@@ -196,7 +196,6 @@ Principe de l'interclassement de deux listes ``lst1`` et ``lst2``.
     === "Énoncé"
         Coder la fonction ``interclassement``.
     === "Correction"
-        
         ```python
         def interclassement(lst1, lst2):
             i1 = 0
@@ -211,7 +210,6 @@ Principe de l'interclassement de deux listes ``lst1`` et ``lst2``.
                     i2 += 1
             return lst_totale + lst1[i1:] + lst2[i2:]
         ```
-        
 
 ### 4.2. La fusion
 
