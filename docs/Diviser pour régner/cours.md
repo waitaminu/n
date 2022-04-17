@@ -70,15 +70,15 @@ Il est possible de programmer de manière récursive la recherche dichotomique s
     ```
 
     1. Pour pouvoir appeler simplement la fonction sans avoir à préciser les indices, on leur donne des paramètres par défaut.
-    2. Il est impossible de donner ```j=len(tab)-1``` par défaut (car ```tab``` est aussi un paramètre). On passe donc par une autre valeur (ici ```None```) qu'on va ici intercepter.
+    2. Il est impossible de donner ```j=len(tableau)-1``` par défaut (car ```tableau``` est aussi un paramètre). On passe donc par une autre valeur (ici ```None```) qu'on va ici intercepter.
 
 Exemple d'utilisation :
 
 ```python
->>> tab = [1, 5, 7, 9, 12, 13]
->>> dicho_rec_2(tab, 12)
+>>> t = [2, 3, 6, 7, 11, 14, 18, 19, 24]
+>>> dicho_rec(t, 7)
 True
->>> dicho_rec_2(tab, 17)
+>>> dicho_rec(t, 35)
 False
 ```
 
@@ -151,7 +151,6 @@ Ainsi, dans le cas où $n$ est pair, il suffit d'élever $a$ au carré (une seul
             return a * puissance_mod(a**2, (n-1)//2)
     ```
 
-
 ### 3.3. Comparaison de la vitesse d'exécution des deux algorithmes
 
 ![image](data/puiss.png)
@@ -165,7 +164,7 @@ Ainsi, dans le cas où $n$ est pair, il suffit d'élever $a$ au carré (une seul
         import matplotlib.pyplot as plt
 
         def carre(x):
-            return x*x
+            return x**2
 
         x = list(range(10))
         y = [carre(k) for k in x]
@@ -187,18 +186,17 @@ Le mécanisme principal du tri fusion est la **fusion** de deux listes triées e
 
 On appelera ce mécanisme l'**interclassement**.
 
-Principe de l'interclassement de deux listes ```lst1``` et ```lst2```.
+Principe de l'interclassement de deux listes ``lst1`` et ``lst2``.
 
-- on part d'une liste vide ```lst_totale```
-- on y ajoute alternativement les éléments de ```lst1``` et ```lst2```. Il faut pour cela gérer séparément un indice ```i1``` pour la liste ```lst1```  et un indice ```i2```  pour la liste ```i2```.
+- on part d'une liste vide ``lst_totale``
+- on y ajoute alternativement les éléments de ``lst1`` et ``lst2``. Il faut pour cela gérer séparément un indice ``i1`` pour la liste ``lst1``  et un indice ``i2``  pour la liste ``i2``.
 - quand une liste est épuisée, on y ajoute la totalité restante de l'autre liste.
 
 !!! example "Exercice"
     === "Énoncé"
-        Coder la fonction ```interclassement```.
+        Coder la fonction ``interclassement``.
     === "Correction"
-        {{ correction(True,
-        "
+        
         ```python
         def interclassement(lst1, lst2):
             i1 = 0
@@ -213,8 +211,7 @@ Principe de l'interclassement de deux listes ```lst1``` et ```lst2```.
                     i2 += 1
             return lst_totale + lst1[i1:] + lst2[i2:]
         ```
-        "
-        ) }}
+        
 
 ### 4.2. La fusion
 
@@ -231,7 +228,7 @@ L'idée du tri fusion est le découpage de la liste originale en une multitude d
 
 #### 4.2.2. Implémentation
 
-La grande force de ce tri va être qu'il se programme simplement de manière **récursive**, en appelant à chaque étape la même fonction mais avec une taille de liste divisée par deux, ce qui justifie son classement parmi les algorithmes utilisants «diviser pour régner».
+La grande force de ce tri va être qu'il se programme simplement de manière **récursive**, en appelant à chaque étape la même fonction mais avec une taille de liste divisée par deux, ce qui justifie son classement parmi les algorithmes utilisant «diviser pour régner».
 
 !!! abstract "Algorithme de tri fusion (*merge sort*)"
     ```python
