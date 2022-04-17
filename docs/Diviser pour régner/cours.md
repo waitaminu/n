@@ -53,7 +53,7 @@ False
 
 Il est possible de programmer de manière récursive la recherche dichotomique sans toucher à la liste, et donc en jouant uniquement sur les indices :
 
-!!! note "Dichotomie version récursive sans slicing"
+!!! note "Dichotomie version récursive"
     ```python linenums='1'
     def dicho_rec(tableau, valeur_cherchee, indice_debut=0, indice_fin=None):
         if indice_fin is None:
