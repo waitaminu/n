@@ -12,7 +12,7 @@ De manière simplifiée :
 - sur ce serveur, un grand nombre de systèmes d'exploitation peuvent être démarrés indépendamment ;
 - une VM est disponible par élève : c'est sa machine virtuelle (VM : Virtual Machine) exécutée sur le serveur `Proxmox` du lycée ;
 - l'élève se connecte à sa VM depuis un navigateur de n'importe quel ordinateur du lycée ;
-- cet ordinateur (le client) ne va faire que recevoir le flux vidéo venu du serveur `Proxmox` et lui envoyer les interactions utilisateurs :  clavier et souris ;
+- cet ordinateur (le client) ne va faire que recevoir le flux vidéo venu du serveur `Proxmox` et lui envoyer les interactions utilisateurs : clavier et souris ;
 - en mettant ce flux vidéo en plein écran, on a l'illusion d'être sous un nouveau système d'exploitation. Nous allons donc travailler sous Linux, tout en restant en réalité sur Windows ;
 - chaque élève a accès à Internet en entrant ses identifiants et mot de passe habituels du réseau pédagogique sur une application nommée ALCASAR (Application Libre pour le Contrôle d'Acccès Sécurisé et Authentifié au Réseau).
 
