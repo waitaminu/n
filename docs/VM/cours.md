@@ -59,8 +59,8 @@ De manière simplifiée :
 - Si tout s'est bien passé, le client de connexion `Spice` permet d'obtenir la distribution Linux : Xubuntu exécutée par la machine virtuelle.
 
 - Renseigner ses identifiants dans la fenêtre de connexion à `Xubuntu`, si la connexion n'est pas automatique :
-      - login : test
-      - mot de passe : nsispeinfo
+  - login : test
+  - mot de passe : nsispeinfo
 
 Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu` 
 
