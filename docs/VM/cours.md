@@ -62,7 +62,7 @@ De manière simplifiée :
   - login : test
   - mot de passe : nsispeinfo
 
-Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu` 
+ Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu`
 
 - Basculer l'affichage en plein écran en cliquant sur ![](data/plein_ecran.png) en haut à droite dans `Spice`.
 
@@ -76,7 +76,7 @@ Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu`
 
 ![image](data/alcasar1.png)
 
-- S'ouvre alors une fenêtre qui prévient "Attention : vous serez déconnecté si vous fermez cette fenêtre". Utiliser alors un autre onglet pour aller sur Lycée connecté.
+- S'ouvre alors une fenêtre qui prévient "Attention : vous serez déconnecté si vous fermez cette fenêtre". Utiliser alors un autre onglet du navigateur pour aller sur Lycée connecté par exemple.
 
 - Pour arrêter une VM, faire simplement une déconnexion en cliquant sur l'icône bleu ![](data/menu_xubuntu.png) en haut à gauche du bureau Xubuntu puis choisir d'éteindre. Ainsi, dans la page `Proxmox`, on verra bien que la VM est stoppée.
 
