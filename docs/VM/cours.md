@@ -1,6 +1,6 @@
 # Utilisation de machines virtuelles (VM) au lycée
 
-![image](data/logo.jpg){: .center width=50%}
+![image](data/logo.jpg)
 
 ## Principe
 
@@ -10,9 +10,9 @@ De manière simplifiée :
 
 - un serveur (assez puissant) se trouve dans la salle serveur du lycée ;
 - sur ce serveur, un grand nombre de systèmes d'exploitation peuvent être démarrés indépendamment ;
-- une VM est disponible par élève : c'est sa machine virtuelle (VM : Virtual Machine) exécutée sur le serveur `Proxmox` du lycée;
+- une VM est disponible par élève : c'est sa machine virtuelle (VM : Virtual Machine) exécutée sur le serveur `Proxmox` du lycée ;
 - l'élève se connecte à sa VM depuis un navigateur de n'importe quel ordinateur du lycée ;
-- cet ordinateur (le client) ne va faire que recevoir le flux vidéo venu du serveur (et lui envoyer les interactions utilisateurs :  clavier et souris) ;
+- cet ordinateur (le client) ne va faire que recevoir le flux vidéo venu du serveur `Proxmox` et lui envoyer les interactions utilisateurs :  clavier et souris ;
 - en mettant ce flux vidéo en plein écran, on a l'illusion d'être sous un nouveau système d'exploitation. Nous allons donc travailler sous Linux, tout en restant en réalité sur Windows ;
 - chaque élève a accès à Internet en entrant ses identifiants et mot de passe habituels du réseau pédagogique sur une application nommée ALCASAR (Application Libre pour le Contrôle d'Acccès Sécurisé et Authentifié au Réseau).
 
@@ -59,8 +59,8 @@ De manière simplifiée :
 - Si tout s'est bien passé, le client de connexion `Spice` permet d'obtenir la distribution Linux : Xubuntu exécutée par la machine virtuelle.
 
 - Renseigner ses identifiants dans la fenêtre de connexion à `Xubuntu`, si la connexion n'est pas automatique :
-  - login : test
-  - mot de passe : nsispeinfo
+      - login : test
+      - mot de passe : nsispeinfo
 
 Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu` 
 
@@ -68,7 +68,7 @@ Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu`
 
 ![Bureau de Xubuntu](data/bureau.png)
 
-- Au premier lancement de `Firefox`, cliquer sur `Afficher la page de connexion du réseau`
+- Au premier lancement de `Firefox` sur `Xubuntu`, cliquer sur `Afficher la page de connexion du réseau`
 
 ![image](data/alcasar0.png)
 
@@ -78,8 +78,8 @@ Ainsi, chaque élève a pour nom d'utilisateur `test` dans `Xubuntu`
 
 - S'ouvre alors une fenêtre qui prévient "Attention : vous serez déconnecté si vous fermez cette fenêtre". Utiliser alors un autre onglet pour aller sur Lycée connecté.
 
-- Quand on veut arrêter une VM, faire simplement une déconnexion en cliquant sur l'icône bleu ![](data/menu_xubuntu.png) en haut à gauche du bureau Xubuntu puis choisir d'éteindre. Ainsi, dans la page `Proxmox`, on verra bien que la VM est stoppée.
+- Pour arrêter une VM, faire simplement une déconnexion en cliquant sur l'icône bleu ![](data/menu_xubuntu.png) en haut à gauche du bureau Xubuntu puis choisir d'éteindre. Ainsi, dans la page `Proxmox`, on verra bien que la VM est stoppée.
 
 - Pour se déconnecter de ``Proxmox``, aller en haut à droite de la fenêtre et cliquer sur la flêche du bas puis sur ``Déconnexion`` ![Déconnexion de Proxmox](data/deconnexion_proxmox.png)
 
-**Remarque** : dans cette version de Proxmox associée à Windows 10, l'utilisateur n'a pas accès au port USB, on ne peut pas donc utiliser de clé USB ni programmer de carte micro:bit ou Arduino.
+**Remarque** : dans cette version de Proxmox associée à Windows 10, l'utilisateur n'a pas accès au port USB, on ne peut pas donc utiliser de clé USB ni programmer de carte micro:bit ou Arduino. Pour récupérer ou enregistrer des fichiers, on pourra utiliser `Documents` et `Documents partagés` de `Lycée connecté`.
