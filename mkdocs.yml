@@ -46,7 +46,7 @@ theme:
         - navigation.top
         - toc.integrate
         - header.autohide
-        
+
 markdown_extensions:
   # - pymdownx.highlight:
       # anchor_linenums: true
@@ -84,8 +84,8 @@ markdown_extensions:
       toc_depth: 3
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - xtra/javascripts/interpreter.js
+  # - javascripts/mathjax.js
+  # - xtra/javascripts/interpreter.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
