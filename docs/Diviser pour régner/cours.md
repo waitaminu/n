@@ -51,7 +51,7 @@ False
 
 ### 1.2. Version récursive
 
-Il est possible de programmer de manière récursive la recherche dichotomique sans toucher à la liste, et donc en jouant uniquement sur les indices :
+Il est possible de programmer de manière récursive la recherche dichotomique sans toucher au tableau, comme on pourrait le faire en utilisant le slicing, et donc en jouant uniquement sur les indices :
 
 !!! note "Dichotomie version récursive"
     ```python linenums='1'
@@ -70,7 +70,7 @@ Il est possible de programmer de manière récursive la recherche dichotomique s
     ```
 
     1. Pour pouvoir appeler simplement la fonction sans avoir à préciser les indices, on leur donne des paramètres par défaut.
-    2. Il est impossible de donner ```j=len(tableau)-1``` par défaut (car ```tableau``` est aussi un paramètre). On passe donc par une autre valeur (ici ```None```) qu'on va ici intercepter.
+    2. Il est impossible de donner ``indice_fin = len(tableau) - 1`` par défaut (car ``tableau`` est aussi un paramètre). On passe donc par une autre valeur (ici ``None``) qu'on va ici intercepter.
 
 Exemple d'utilisation :
 
