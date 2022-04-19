@@ -1,6 +1,6 @@
 # Accueil
 
-Bienvenue sur le site de cours et activités de la spécialité INFO du lycée
+Bienvenue sur le site de cours et d'activités de la spécialité INFO du lycée.
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
